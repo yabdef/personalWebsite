@@ -1,0 +1,209 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_layout.cshtml";
+}
+<div id="index-page" class="page-container">
+    <div class="logolayer1"></div>
+    <div id="logolayer2" class="logolayer2"></div>
+    <div class="name-container">
+        <div class="name-label">YUSUF ALPER <b>BERBER</b></div>
+        <div class="description-label">PERSONAL WEB SITE</div>
+        <div class="socialmedia-label"><i class="fab fa-linkedin"></i><i class="fab fa-instagram"></i><i class="fab fa-youtube"></i></div>
+    </div>
+    <div class="aboutme-container">
+        <div class="aboutme-label" onclick="openMenu('aboutme')">
+            ABOUT ME<br />
+            <div style="height:0" id="aboutme-menu-container">
+                <div class="aboutme-menu-item" onclick="openPage('1','left')"><b>PERSONAL</b> INFORMATION
+                <br /><span style="font-size:14px;font-weight:200;letter-spacing:4px">KİŞİSEL BİLGİLER</span></div>
+                <div class="aboutme-menu-item" onclick="openPage('2','left')"><b>ACADEMIC</b> BACKGROUND
+                <br /><span style="font-size:14px;font-weight:200;letter-spacing:4px">AKADEMİK GEÇMİŞ</span></div>
+                <div class="aboutme-menu-item" onclick="openPage('3','left')"><b>WORK</b> EXPERIENCE
+                <br /><span style="font-size:14px;font-weight:200;letter-spacing:4px">İŞ DENEYİMİ</span></div>
+                <div class="aboutme-menu-item" onclick="openPage('4','left')"><b>SKILLS</b>
+                <br /><span style="font-size:14px;font-weight:200;letter-spacing:4px">YETENEKLER</span></div>
+            </div>
+            <span style="font-size:16px;font-weight:200">HAKKIMDA</span>
+        </div>
+    </div>
+    <div class="offers-container">
+        <div class="offers-label" onclick="openMenu('offers')">
+            OFFERS<br />
+            <div style="height:0" id="offers-menu-container">
+                <div class="offers-menu-item" onclick="openPage('5','right')"><b>MECHANICAL</b> ENGINEERING
+                <br /><span style="font-size:14px;font-weight:200;letter-spacing:4px">MAKİNA MÜHENDİSLİĞİ</span></div>
+                <div class="offers-menu-item" onclick="openPage('6','right')"><b>SOFTWARE</b> DEVELOPMENT
+                <br /><span style="font-size:14px;font-weight:200;letter-spacing:4px">YAZILIM GELİŞTİRME</span></div>
+                <div class="offers-menu-item" onclick="openPage('7','right')"><b>MUSIC</b>
+                <br /><span style="font-size:14px;font-weight:200;letter-spacing:4px">MÜZİK</span></div>
+                <div class="offers-menu-item" onclick="openPage('8','right')"><b>VISUAL</b> DESIGN
+                <br /><span style="font-size:14px;font-weight:200;letter-spacing:4px">GÖRSEL TASARIM</span></div>
+                <div class="offers-menu-item" onclick="openPage('9','right')"><b>GAMING</b>
+                <br /><span style="font-size:14px;font-weight:200;letter-spacing:4px">OYUN</span></div>
+            </div>
+            <span style="font-size:16px;font-weight:200">İŞ TEKLİFLERİ</span>
+        </div>
+    </div>
+</div>
+<div class="go-right" onclick="go('center')"><i class="fas fa-chevron-right"></i></div>
+<div class="go-left" onclick="go('center')"><i class="fas fa-chevron-left"></i></div>
+    
+<div id="aboutme-page" class="page-container">
+
+    <div class="nav-container">
+        <div class="nav-item" onclick="openPage('1','left')">
+            <div class="nav-label">INFORMATION</div>
+        </div>
+        <div class="nav-item" onclick="openPage('2','left')">
+            <div class="nav-label">BACKGROUND</div>
+        </div>
+        <div class="nav-item" onclick="openPage('3','left')">
+            <div class="nav-label">EXPERIENCE</div>
+        </div>
+        <div class="nav-item" onclick="openPage('4','left')">
+            <div class="nav-label">SKILLS</div>
+        </div>
+    </div>
+    <div id="cv-page-1" class="page">
+        <h1><b>PERSONAL</b> INFORMATION</h1>
+        <div class="content-title"><h2><b>CONTACT</b> İLETİŞİM</h2></div>
+        <div class="content">
+            <div class="content-item">
+                <i class="fas fa-envelope"></i>
+                <h3>E-MAIL</h3>
+                <h4>E-Posta</h4>
+                <p>contact@yabdef.com</p>
+            </div>
+            <div class="content-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>ADDRESS</h3>
+                <h4>Adres</h4>
+                <p>Istanbul, Turkey</p>
+            </div>
+        </div>
+        <div class="content-title"><h2><b>CREDENTIALS</b> KİMLİK BİLGİLERİ</h2></div>
+        <div class="content">
+            <div class="content-item">
+                <i class="fas fa-flag"></i>
+                <h3>NATIONALITY</h3>
+                <h4>Uyruk</h4>
+                <p>Turkish</p>
+            </div>
+            <div class="content-item">
+                <i class="fas fa-calendar-week"></i>
+                <h3>BIRTHDATE</h3>
+                <h4>Doğum Tarihi</h4>
+                <p>16.07.1994</p>
+            </div>
+            <div class="content-item">
+                <i class="fas fa-venus-mars"></i>
+                <h3>GENDER</h3>
+                <h4>Cinsiyet</h4>
+                <p>Male</p>
+            </div>
+            <div class="content-item">
+                <i class="fas fa-car"></i>
+                <h3>DRIVER LICENSE</h3>
+                <h4>Sürücü Belgesi</h4>
+                <p>No</p>
+            </div>
+            <div class="content-item">
+                <i class="fas fa-baby-carriage"></i>
+                <h3>MARITAL STATUS</h3>
+                <h4>Medeni Durum</h4>
+                <p>Single</p>
+            </div>
+        </div>
+        <div class="content-title"><h2><b>INTERESTS</b> İLGİ ALANLARI</h2></div>
+        <div class="content">
+            <div class="content-item">
+                <i class="fas fa-headphones"></i>
+                <h3>SOUND DESIGN</h3>
+                <h4>Ses Tasarımı</h4>
+            </div>
+            <div class="content-item">
+                <i class="fas fa-chess-king"></i>
+                <h3>CHESS</h3>
+                <h4>Satranç</h4>
+            </div>
+            <div class="content-item">
+                <i class="fas fa-gamepad"></i>
+                <h3>E-SPORTS</h3>
+                <h4>E-Spor</h4>
+            </div>
+            <div class="content-item">
+                <i class="far fa-futbol"></i>
+                <h3>TEAM SPORTS</h3>
+                <h4>Takım Sporları</h4>
+            </div>
+            <div class="content-item">
+                <i class="fas fa-video"></i>
+                <h3>VIDEO DESIGN</h3>
+                <h4>Video Tasarımı</h4>
+            </div>
+        </div>
+    </div>
+    <div id="cv-page-2" class="page">
+        <h1><b>ACADEMIC</b> BACKGROUND</h1>
+
+        <div class="content-title"><h2><b>ISTANBUL TECHNICAL UNIVERSITY</b> MECHANICAL ENGINEERING</h2></div>
+        <div class="content">
+            <div class="content-item">
+                <img src="~/Images/itu-logo.png" />
+            </div>
+        </div>
+        <div class="content-title"><h2><b>ISTANBUL TECHNICAL UNIVERSITY</b> UNDERGRADUATE PREPARATORY</h2></div>
+        <div class="content">
+            <div class="content-item">
+            </div>
+        </div>
+        <div class="content-title"><h2><b>TRABZON YOMRA</b> SCIENCE HIGH SCHOOL</h2></div>
+        <div class="content">
+            <div class="content-item">
+            </div>
+        </div>
+
+    </div>
+    <div id="cv-page-3" class="page">
+        <h1><b>WORK</b> EXPERIENCE</h1>
+    </div>
+    <div id="cv-page-4" class="page">
+        <h1><b>SKILLS</b></h1>
+    </div>
+</div>
+<div id="offers-page" class="page-container">
+    <div style="left:90%;" class="nav-container">
+        <div class="nav-item" onclick="openPage('5','right')">
+            <div class="nav-label">MECHANICAL</div>
+        </div>
+        <div class="nav-item" onclick="openPage('6','right')">
+            <div class="nav-label">SOFTWARE</div>
+        </div>
+        <div class="nav-item" onclick="openPage('7','right')">
+            <div class="nav-label">MUSIC</div>
+        </div>
+        <div class="nav-item" onclick="openPage('8','right')">
+            <div class="nav-label">VISUAL</div>
+        </div>
+        <div class="nav-item" onclick="openPage('9','right')">
+            <div class="nav-label">GAMING</div>
+        </div>
+    </div>
+
+    <div id="cv-page-5" class="page page-ex">
+        <h1>MECHANICAL ENGINEERING</h1>
+    </div>
+    <div id="cv-page-6" class="page page-ex">
+        <h1>SOFTWARE DEVELOPMENT</h1>
+    </div>
+    <div id="cv-page-7" class="page page-ex">
+        <h1>MUSIC</h1>
+    </div>
+    <div id="cv-page-8" class="page page-ex">
+        <h1>VISUAL DESIGN</h1>
+    </div>
+    <div id="cv-page-9" class="page page-ex">
+        <h1>GAMING</h1>
+    </div>
+</div>
